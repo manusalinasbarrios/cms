@@ -541,6 +541,12 @@ export interface ApiCityCity extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    className: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     contactos: Schema.Attribute.Relation<
       'manyToMany',
       'api::contacto.contacto'
@@ -557,6 +563,12 @@ export interface ApiCityCity extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::city.city'>;
     name: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    order: Schema.Attribute.Integer &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
