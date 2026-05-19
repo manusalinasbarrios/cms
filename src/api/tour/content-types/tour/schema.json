@@ -31,22 +31,6 @@
         }
       }
     },
-    "mapUrl": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "phone": {
-      "type": "biginteger",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "images": {
       "type": "media",
       "pluginOptions": {
@@ -67,14 +51,6 @@
       "relation": "oneToOne",
       "target": "api::city.city"
     },
-    "externalLink": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "coverImage": {
       "type": "media",
       "pluginOptions": {
@@ -89,6 +65,31 @@
         "videos",
         "audios"
       ]
+    },
+    "portada": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "onlyCoverImage": {
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": false
+    },
+    "order": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
