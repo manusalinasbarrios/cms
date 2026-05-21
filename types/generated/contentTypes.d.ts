@@ -567,7 +567,8 @@ export interface ApiCityCity extends Struct.CollectionTypeSchema {
         };
       }>;
     estadioImage: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
+      'images' | 'files' | 'videos' | 'audios',
+      true
     > &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
