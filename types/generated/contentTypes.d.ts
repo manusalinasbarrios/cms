@@ -755,6 +755,12 @@ export interface ApiPartidoPartido extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
+    awayScore: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     awayTeam: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -782,6 +788,12 @@ export interface ApiPartidoPartido extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::partido.partido'
     >;
+    localScore: Schema.Attribute.Integer &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     localTeam: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
